@@ -1,0 +1,11 @@
+1. Send M106 (Set Fan Speed) S255 (speed flag normalized from 0 to 255)
+
+	M106 S255
+
+2. Send M303 (PID autotune) E0 (unheated bed flag) S210 (temperature flag) C7 (cycles flag)
+
+	M303 E0 S210 C7
+
+3. Send M301 (Set Hotend PID) Pkp (proportional flag, printed by M303) Iki (integral flag) Dkd (derivative flag)
+
+	M301 Pkp Iki Dkd
